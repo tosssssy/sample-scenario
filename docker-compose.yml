@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  frondend:
+    build:
+      context: ./frondend
+
+  backend:
+    build:
+      context: ./backend
+
+  reverse-proxy:
+    build:
+      context: ./reverse-proxy
+    ports:
+      - 80:80
