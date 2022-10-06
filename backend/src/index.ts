@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 // cors設定
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: '*',
     credentials: true,
     optionsSuccessStatus: 200,
   }),
